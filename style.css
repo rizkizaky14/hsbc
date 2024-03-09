@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.main-container {
+  background: rgba(255, 255, 255, 1);
+  max-width: 1728px;
+  max-height: 1140px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 32px;
+  gap: 32px
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 0 15px;
+}
+
+.intro {
+  margin-bottom: 48px;
+}
+
+h1 {
+  color: rgba(12, 20, 33, 1);
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  display: flex;
+  justify-content: left;
+  margin-bottom: 28px;
+}
+
+.intro p {
+  color: rgba(49, 57, 87, 1);
+}
+
+.left-side {
+  padding: 0 15px;
+  position: relative;
+  top: 269.5px;  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 388px;
+  height: 284px;
+  gap: 24px;
+}
+
+input {
+  padding: 15px;
+}
+
+/* form .submit {
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+} */
+
+.email, .password, .forgot-pwd {
+  margin-top: 18px;
+  display: flex;
+}
+
+.forgot-pwd {
+  flex-direction: row-reverse;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: rgba(30, 74, 233, 1);
+}
+
+.direction {
+  margin-bottom: 10px;
+}
+
+.art {
+  /* display: inline-block; */
+  padding: 0 15px;
+}
+
+.img-flower {
+  background-image: url(Login\ Art.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 816px;
+  height: 1076px;
+  border-radius: 24px;
+}
+
+form {
+  margin-bottom: 48px;
+}
+
+.email, .password {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.submit {
+  background-color: rgba(22, 45, 58, 1);
+  color: rgba(255, 255, 255, 1);
+  max-width: 388px;
+  height: 52px;
+  padding: 16px 0px 16px 0px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  /* typography */
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+.head-email, .head-pwd {
+  max-width: 388px;
+  height: 72px;
+  gap: 8px;
+}
+
+  form a {
+  text-decoration: none;
+}
+
+.input-email, .input-pwd {
+  background-color: rgba(247, 251, 255, 1);
+  border-color: rgba(212, 215, 227, 1);
+  border-style: solid;
+  border-width: 2px; 
+  color: rgba(136, 151, 173, 1);
+  /* layout */
+  width: 388px;
+  height: 48px;
+  top: 24px;
+  border-radius: 12px;
+  /* placeholder */
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+.sign-up, .copyright {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.sign-up a {
+  text-decoration: none;
+}
+
+.copyright {
+  margin-top: 137px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: rgba(149, 156, 182, 1);
+}
+
+@media (max-width: 767px) {
+  .main-container {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 0;
+    overflow-x: hidden;
+  }
+
+  .wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .art {
+    margin: 0;
+    padding: 0;
+    margin-top: 24px;
+    padding: 0 24px 0 24px;
+  }
+
+  .img-flower {
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: 342px;
+    display: block;
+    width: 342px;
+    height: 180px;
+    background-position-y: -181px;
+    border-radius: 20px;
+  }
+
+  .left-side {
+    margin: 0;
+    padding: 0;
+    padding: 0px 24px 0px 24px;
+    top: unset;
+    margin-top: 27px;
+  }
+
+  .intro {
+    gap: 16px;
+  }
+
+  h1 {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+
+  .intro p {
+    font-family: SF Pro Display;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+
+  form {
+    width: 342px;
+    height: 234px;
+    gap: 16px;
+  }
+
+  .email, .password {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+
+  .input-email, .input-pwd {
+    width: 342px;
+    height: 42px;
+    border-radius: 8px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    top: 22px;
+  }
+
+  .forgot-pwd {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    text-align: center;
+  }
+
+  .submit {
+    padding: 14px 0px 14px 0px;
+    border-radius: 12px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    text-align: center;
+  }
+
+  .sign-up p {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    }
+
+    .copyright p {
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 14px;
+      letter-spacing: 0.01em;
+      text-align: center;
+      color: rgba(149, 156, 182, 1);
+    }
+}
